@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: rgb(20, 22, 39);
+  font-family: 'Roboto', sans-serif;
+}
+
+.header{
+  background-color: rgb(20, 22, 39); 
+  height: 60px;     
+}
+
+.header_loginform{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;   
+  height: 60px;
+}
+
+.header_logo img{
+  height: 50px;
+}
+
+.loginecriar{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  height: 60px;  
+  padding-top:10px ;
+}
+
+.voltarlogin img{
+  width: 5%;
+  position: absolute;
+  left: 550px;
+  cursor: pointer;
+}
+
+.login{
+  display:none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.5) ;
+}
+
+.logarmodal{
+  text-align: center;
+  display: flex;
+  gap: 50px;  
+  align-items: center;
+  justify-content: space-around;
+}
+
+.abrirlogar{
+  display: flex;
+  gap:52px;
+  
+}
+
+.login form{  
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 10%;
+  background-color: rgb(20, 22, 39);
+  padding: 20px;
+  width: 40%;
+  height: 50%;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  border-radius: 60px 10px;
+  text-align: left;
+  color: white;
+}
+
+.login input[type=email],.login input[type=password]{
+  width: 60%;  
+  height: 60px;
+  border: none;
+  background-color: rgb(20, 22, 39);
+  border-bottom: 2px solid green;
+  color: white;    
+  text-align: left;  
+  font-size: 20px;    
+}
+
+.login input[type=email]::placeholder,.login input[type=password]::placeholder{
+color: white;
+}
+
+.login input[type=email]:focus,.login input[type=password]:focus{
+  box-shadow: 0 0 0 0;  
+  outline: 0;
+  }
+
+.login input[type=submit]{
+  width: 120px;  
+  height: 60px;
+  border: none;  
+  background-color:rgb(131, 203, 22);
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;  
+  cursor: pointer;
+}
+
+.login input[type=submit]:hover{
+  background-color: rgb(91, 145, 10);
+}
+
+.btn_criarconta{
+  width: 130px;
+  height: 40px;
+  background-color: rgb(44, 47, 72);   
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  padding: 0px 16px;
+  margin: 0px 04px;
+  border: none;
+  box-shadow: 0.5px 0.5px  white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn_criarconta:hover{
+ background-color:rgb(34, 35, 48) ;
+}
+
+.btn_logar{
+  width: 130px;
+  height: 40px;
+  background-color: rgb(131, 203, 22);   
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  padding: 0px 16px;
+  margin: 0px 04px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn_logar:hover{
+  background-color: rgb(91, 145, 10);
+}
+
+.criarconta{
+  display:none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.5) ;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.criarconta form{
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 10%;
+  background-color: rgb(20, 22, 39);
+  padding: 20px;
+  width: 40%;
+  height: 50%;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  border-radius: 60px 10px;
+  text-align: left;
+  color: white;  
+  
+}
+
+.criarconta input[type=email], .criarconta input[type=username], .criarconta input[type=password]{  
+  width: 60%;  
+  height: 60px;
+  border: none;
+  background-color: rgb(20, 22, 39);
+  border-bottom: 2px solid green;
+  color: white;    
+  text-align: left;  
+  font-size: 20px;    
+  font-family: 'Roboto', sans-serif;
+}
+
+.criarconta input[type=email]:focus, .criarconta input[type=username]:focus, .criarconta input[type=password]:focus{ 
+  box-shadow: 0 0 0 0;  
+  outline: 0;
+}
+
+.criarconta input[type=email]::placeholder, .criarconta input[type=username]::placeholder, .criarconta input[type=password]::placeholder{
+  color: white;
+}
+
+.criarconta input[type=submit]{
+  width: 120px;  
+  height: 60px;
+  border: none;  
+  background-color:rgb(131, 203, 22);
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;  
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+.criarconta input[type=submit]:hover{
+  background-color: rgb(91, 145, 10);
+}
+
+.botaosaircriarconta img {
+  width: 5%;
+  position: absolute;
+  left: 550px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.headerlogado{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn_logado{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;   
+  height: 60px;
+}
+
+.bannerhome{
+    background-image: url('./assets/fundohome.png') ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bannerhome h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.bannerhome h3{
+    font-size: 30px;
+}
+
+.logos{
+  display: flex;
+  flex-direction: row;
+  max-height: 50px;
+}
+
+.logosicons{ 
+  height: 100%;
+}
+
+
+
+
