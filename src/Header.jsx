@@ -1,12 +1,8 @@
 import React from 'react';
 import {auth} from './firebase.js';
-import {useEffect, useState} from 'react';
-import {Link} from 'react-router-dom';
 
 
-
-
-function Header(props) {
+function Header(props) {        
 
     function Abrirlogar(e){
         e.preventDefault();

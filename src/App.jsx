@@ -3,10 +3,7 @@ import './App.css'
 import {auth} from './firebase.js';
 import {useEffect} from 'react';
 import Header from './Header.jsx';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Rotas from './Rots';
-
-
 
 function App() {
   
@@ -20,9 +17,9 @@ function App() {
   
     <div className="App">
        
-       
-       
-                
+       <Header setUser={setUser} user={user}></Header>
+       <Rotas/>
+                 
    </div>
   )
 }

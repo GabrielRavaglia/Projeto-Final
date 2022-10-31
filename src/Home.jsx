@@ -1,12 +1,9 @@
 import React from 'react';
-import Header from './Header.jsx';
-
 
 
 function Home(){
-    return (
-        <div className='app'>
-        <Header setUser={setUser} user={user}></Header>
+    return (      
+       
         <div className='bannerhome'>
             
             <h1>FAÇA PARTE DA MAIOR  <br /> COMUNIDADE DE ESPORTS DO BRASIL.</h1>
@@ -17,7 +14,7 @@ function Home(){
           <img className='logosicons' src="./src/assets/Logo-Cs.png"/>
             </div>
         </div>
-        </div>
+        
     )
 }
 
